@@ -4,10 +4,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 void main() {
   runApp(MyApp());
 
-  Firestore.instance
-      .collection("col")
-      .document("doc")
-      .setData({"texto": "Divino"});
+  Firestore.instance.collection("mensagens").document("msg2").setData({
+    'text': 'Olá"',
+    'from': 'Divino',
+    'read': false
+  });
 }
 
 class MyApp extends StatelessWidget {
