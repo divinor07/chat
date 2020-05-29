@@ -1,3 +1,4 @@
+import 'package:chat/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -19,10 +20,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         iconTheme: IconThemeData(
-          color: Colors.blue;
+          color: Colors.blue
         )
       ),
-      home: Container(),
+      home: ChatScreen(),
     );
   }
 }
